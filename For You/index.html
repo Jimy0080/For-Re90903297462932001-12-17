@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Special/Media/favicon_io/favicon-32x32.png">
+    <title>For You💖</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --FirstColor: rgb(237, 151, 169);
+            --backColor:
+                rgb(244, 118, 137) 0%,
+                rgb(237, 57, 87) 30%,
+                rgb(252, 116, 157) 70%;
+            --backColor2:
+                rgb(241, 93, 115) 0%,
+                pink 30%,
+                rgb(234, 2, 71) 70%;
+        }
+
+        body {
+            font-family: "Jomhuria", serif;
+            ;
+            color: rgb(88, 2, 2);
+            background-image: linear-gradient(to right, var(--backColor));
+            height: 100vh;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+                "one one one one one one one one one one one one"
+                "two two two two two two two two two two two two "
+                "three three three three three three three three three three three three "
+                "final final final final final final final final final final final final ";
+        }
+
+        /* 
+        
+        =============================================FIRST-SECTION=============================================
+
+        */
+        .one {
+            grid-area: one;
+            background-image:
+                linear-gradient(to top, var(--backColor));
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            place-items: center;
+        }
+
+        .one .for-you {
+            /* visibility: hidden; */
+
+            background-image:
+                url(https://i.pinimg.com/originals/e7/88/2c/e7882c300baff325f9f1ac2cd097c2be.gif);
+            background-size: cover;
+            border-radius: 10px;
+            border: 5px solid rgb(238, 78, 78);
+            width: 36%;
+            height: 92%;
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .one .for-you::before {
+            content: "";
+            width: 300px;
+            height: 300px;
+            border: 5px solid rgb(238, 78, 78);
+
+            background-color: #eee;
+            background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmR1enhncjFwZnpkaHM5eWoycGF1OHl4aHVvemN5anVmbXVmdHJuNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/5j4MSItGgMlOnFzIK4/giphy.webp);
+            background-size: contain;
+            position: absolute;
+            top: 150px;
+            right: -400px;
+        }
+
+        .one .for-you::after {
+            content: "";
+            width: 300px;
+            height: 300px;
+            border: 5px solid rgb(238, 78, 78);
+
+            background-color: #eee;
+            background-image: url(https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmR1enhncjFwZnpkaHM5eWoycGF1OHl4aHVvemN5anVmbXVmdHJuNiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/t8xgPfC5oNIRMrNooe/giphy.webp);
+            background-size: contain;
+            position: absolute;
+            top: 150px;
+            left: -400px;
+        }
+
+
+
+        .one .for-you p,
+        .one .for-you h1 {
+            font-weight: 700;
+            text-shadow: 1px 1px 40px rgb(237, 6, 6);
+            margin: 15px 10px;
+            padding: 20px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: transparent transparent rgb(71, 33, 33);
+        }
+
+
+
+        .one .for-you img {
+            width: 40%;
+            height: 65%;
+            margin: 50px auto;
+            display: inline-block;
+            border-radius: 10px;
+            border: 2px solid rgb(84, 48, 48);
+            transition: 0.9s;
+            filter: grayscale(50%);
+            /* visibility: hidden; */
+        }
+
+        .one .for-you img:hover {
+            filter: grayscale(0);
+            border-color: red;
+        }
+
+        /* 
+
+    =============================================SECOND-SECTION==============================================
+
+*/
+
+        .two {
+            grid-area: two;
+            background-color: var(--FirstColor);
+            background-image: linear-gradient(to bottom, var(--backColor));
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .two h2 {
+            font-size: 50px;
+            padding: 20px;
+            margin: 50px auto;
+            position: relative;
+        }
+
+        .two h2::before {
+            content: "";
+            position: absolute;
+            border-style: solid;
+            border-width: 25px;
+            border-color: rgb(240, 211, 220) transparent transparent transparent;
+            top: 123%;
+            left: 44%;
+            margin-top: -7px;
+        }
+
+
+
+        .two .images {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            justify-content: center;
+            gap: 10px;
+        }
+
+
+        .two .images div {
+            margin: 20px;
+            width: 500px;
+            height: 400px;
+            background-color: #eee;
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .two .images div img {
+            /* visibility: hidden; */
+            width: 100%;
+            height: 100%;
+            border: 10px solid rgb(186, 82, 151);
+            border-radius: 40px;
+            object-fit: cover;
+            filter: blur(20px);
+            transition: 0.5s;
+        }
+
+        .two .images div img:hover {
+            filter: blur(0);
+        }
+
+        /* 
+
+        =============================================THIRD-SECTION=============================================
+
+*/
+        .three {
+            padding: 20px;
+            grid-area: three;
+            background-image:
+                linear-gradient(to top, var(--backColor));
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .three .songs {
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .three .songs div {
+            font-size: 20px;
+            width: 567px;
+            height: 535px;
+            padding: 50px;
+            margin: 10px;
+            background-image: linear-gradient(to right,
+                    rgb(255, 12, 12) 1%,
+                    rgb(17, 2, 4) 50%,
+                    rgb(239, 9, 55) 90%);
+            border: 5px solid rgb(240, 169, 179);
+            border-radius: 10px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .three .songs div::before {
+            content: "";
+            width: 300px;
+            height: 170px;
+            border: 5px solid rgb(238, 78, 78);
+
+            background-color: #eee;
+            background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWl4cnFpZWZ4dnk2aXQ5dTI5Z3dwMTZ6YmZoYzZ1aXV6cXh3ajFhZiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/LR5GeZFCwDRcpG20PR/200.webp);
+            background-size: contain;
+            position: absolute;
+            top: 150px;
+            right: -400px;
+        }
+
+        .three .songs div::after {
+            content: "";
+            width: 300px;
+            height: 170px;
+            border: 5px solid rgb(238, 78, 78);
+            background-color: #eee;
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWMybjQ2eXZtMHhpNWY5emlibmsyOXV5aGZ4ejBhamdnMm16cDMzMyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/IBx31zhzAbXL8WUy7j/200.webp);
+            background-size: contain;
+            position: absolute;
+            top: 150px;
+            left: -400px;
+        }
+
+
+        .three .songs div a {
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+
+        .three .songs div a:visited {
+            color: pink;
+        }
+
+        .three .songs div a:hover {
+            color: red;
+        }
+
+        .three .songs div a:hover {
+            color: rgb(248, 3, 3);
+        }
+
+        .three .songs div img {
+            width: 50%;
+            border: 5px solid rgb(240, 169, 179);
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+
+        .three .songs img:hover {
+            color: black;
+            border-color: red;
+        }
+
+        .three .songs div p {
+            color: pink;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid rgb(222, 107, 107);
+            transition: 0.5s;
+        }
+
+        .three .songs div p:hover {
+            color: red;
+            border-color: red;
+        }
+
+        /* 
+
+        =============================================Final-SECTION=============================================
+
+*/
+
+        .final {
+            grid-area: final;
+            background-image: linear-gradient(to bottom, var(--backColor));
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .final .message {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            border: 3px solid pink;
+        }
+
+        .final .message p {
+            font-size: 35px;
+            word-spacing: 10%;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .final .conclusion {
+            background-image: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGN4NzF1ZGc2eGttcm42cW4xMXo5ZGdsaDd1bjBidWU0OWY1bHBjZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/W1hd3uXRIbddu/200.webp);
+
+            align-self: center;
+            color: rgb(245, 238, 238);
+            font-size: 30px;
+            border-radius: 30px;
+            border: 3px solid pink;
+            margin: 20px;
+            padding: 0px 20px;
+            position: relative;
+        }
+
+        .final .conclusion::before {
+            content: "";
+            position: absolute;
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDhyd204ZW45a2JlMDVycXhjYXRlNGxsZ2h5ZG14aW5xN2tyNGcyciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kaBU6pgv0OsPHz2yxy/giphy.webp);
+            background-size: contain;
+            border-radius: 20px;
+            width: 40%;
+            height: 57%;
+            top: 50%;
+            right: -400px;
+            margin-top: -40px;
+        }
+
+        .final .conclusion::after {
+            content: "";
+            position: absolute;
+            background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeDhyd204ZW45a2JlMDVycXhjYXRlNGxsZ2h5ZG14aW5xN2tyNGcyciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kaBU6pgv0OsPHz2yxy/giphy.webp);
+            background-size: contain;
+            border-radius: 20px;
+            width: 40%;
+            height: 57%;
+            top: 50%;
+            left: -400px;
+            margin-top: -40px;
+        }
+    </style>
+</head>
+
+<!--
+
+        =============================================HTIML-SECTION=============================================
+
+-->
+
+<body>
+    <div class="one">
+        <div class="for-you">
+            <h1>هلا ريمتي...😊</h1>
+            <p style="font-size: 25px; ">الصفحة ذي اهداء ليك يا عمري حاجة بسيطة كدة</p>
+            <img src="Special/Media/Re Pic3.jpeg" alt="re">
+        </div>
+    </div>
+    <div class="two">
+        <h2>✨امثلة على جمالك✨</h2>
+        <div class="images">
+            <div> <img src="Special/Media/Re Gif1.gif" alt="reem"></div>
+            <div><img src="Special/Media/Re Gif2.gif" alt="reem"></div>
+            <div><img src="Special/Media/Re Gif3.gif" alt="reem"></div>
+            <div><img src="Special/Media/Re Gif4.gif" alt="reem"></div>
+        </div>
+    </div>
+    <div class="three">
+        <h1>اغاني تذكرني فيك🎵💖</h1>
+        <div class="songs">
+            <div>
+                <img src="Special/Media/song 1.jpe" alt="">
+                <br>
+                <p>اسم المغني ✨: سيلاوي</p>
+                <p>اسم الاغنينة✨: لما تكوني</p>
+                <a href="https://www.youtube.com/watch?v=OTd28lXLEfc&list=RDOTd28lXLEfc&start_radio=1&pp=ygUR2YTZhdinINiq2YPZiNmG2YqgBwE%3D"
+                    target="_blank" title="Song 1💖">🎵اضغطي هنا عشان تسمعي الاغنية🎵</a>
+            </div>
+            <div>
+                <img style="height: 200px;" src="Special/Media/song 2.jpg" alt="">
+                <br>
+                <p>اسم المغني ✨: مازن حامد</p>
+                <p>اسم الاغنينة✨: الحزن النبيل</p>
+                <a href="" target="_blank" title="Song 2💖">🎵اضغطي هنا عشان تسمعي الاغنية🎵</a>
+            </div>
+            <div>
+                <img src="Special/Media/song 3.jpe" alt="">
+                <br>
+                <p>اسم المغني ✨: مايكل جاكسون</p>
+                <p>اسم الاغنينة✨: انت لست وحيدا</p>
+                <a href="https://youtu.be/6N6dYnICduY?list=RD6N6dYnICduY" target="_blank" title="Song 3💖">🎵اضغطي هنا
+                    عشان تسمعي الاغنية🎵</a>
+            </div>
+        </div>
+    </div>
+    <div class="final">
+        <div class="message">
+            <h1 style="text-align: center;">رسالتي لك يا ريمتي 💓:</h1>
+            <p>الصفحة ذي ما تغطيك حقك ابدا ، والله انتي اجمل شي عرفتو في حياتي يعني لو حاكمل اكتب كلام حلو فيك ما حاطلع
+                كل شي في خاطري و انا متاكد 100% اني ما حالقى زيك لو دورت الكوكب ذا و المجرة يا شيخه
+                ابتسامتك بتعدل مزاجي و دايما لمن اقعد معاك بضحك طول الوقت بتعرفي تبسطيني يعني اكثر جزء في اليوم بتحمس
+                ليهو لمن اكون معاك و بتنسيني اي كان الي كلن مزعلني او مضايقني و حتى لو جيت وريتك شنو الحاصل بتسمعيني مع
+                اني ما داير انكد بس انتي واقفه معاي دايما و ابا كان المزعلني بتصبري عليه و تسمعيني
+
+                انتي اكبر مشجع لي و حرفيا العزيمة و التفاؤل و الامل الي فيني ذا من بعد الله انتي والله انتي مصدر سعادتي
+                و طمأنينتي و من اذكى البنات الي اعرفهم و اجملهم طبعا😊 يعني انتي سمحة لدرجة يعني ما شاء الله عليك يا
+                قلبي انت و دايما موجودة عشاني.. انتي اكبر شي في حياتي انتي نوري و سماي و ارضي و بيتي و كوني و قلبي و
+                ضلعي انتي سندي و صديقتي و حبيبتي الرهيبه و مهما كانت الدنيا و الظروف صعبه انتي بتخليها ولا كانها موجودة
+                انتي الضوء الي في اخر النفق ( و ما قطار هو 😂) يعني انتي نعمة كبيرة جدا كوني القى زوله نفس جوي و نفس
+                التفكير و نفس اشياء كثيرة ما حالقى بنت زيك ابدا ولا حاريد غيرك ابدا و الي بيننا ذا ان شاء الله يدوم
+                للابد الين اخر عمرنا. انتي بتخلي الحياة تستاها نعيشها و السبب الي يخليني ابتسم تخليني احس اني شخص كامل،
+                حبك لي هي قوتي و الي مخليني مستمر.. مهما كانت الظروف صعبه و مهما طالت مدة لقائنا دهر و مهما حصل و صعبت
+                الظروف حارجع اقوم تاني و انا ما حاستسلم ابدا فيك ولا حاوقف الين اظفر بيك كجائزتي لاني ما داير اتزوج غيرك
+                ولا داير
+                بنت تكون مرتي الا انتي بس ولا داير اولادي يكونوا من غيرك بإذن الله... حاضارب مع الظروف و اعض فيها عض
+                الين اقابلك لانك نصي التاني و ما حاكون كامل من غيرك انتي فقط حنتحدى الزمن و الظروف و كل شي و حنصل لبعض
+                بإذن الله و ما حاوقف تفائل يا عمري و انا حاكون معاك دايما و حاوقف معاك ضد كل شي و ضد العالم كلو يا...
+
+                انتي حبي الحقيقي يا ريم و انا احبك دايما و ابدا يا مرتي المستقبلية 🌹ان شاء الله بإذن الله🌹</p>
+        </div>
+        <div class="conclusion">
+            <h3>صنع بال💗 من اجلك</h3>
+            <h4>من حبيبك :جعغر😊</h4>
+        </div>
+    </div>
+</body>
+
+</html>
